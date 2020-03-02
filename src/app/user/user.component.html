@@ -1,0 +1,43 @@
+<script>
+    $('#myList a').on('click', function(e) {
+        e.preventDefault()
+        $(this).tab('show')
+        $('#myList a[href="#profile"]').tab('show') // Select tab by name
+        $('#myList a:first-child').tab('show') // Select first tab
+        $('#myList a:last-child').tab('show') // Select last tab
+        $('#myList a:nth-child(3)').tab('show') // Select third tab
+    })
+</script>
+<section class="mt-5"><hr>
+    <div class="container  mt-5">
+        <h1 class="text-center">User Information</h1>
+        <div class="row mt-5 mb-5 user">
+
+            <div class="col-4 col-md-5 col-sm-6">
+                <div class="list-group text-center" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Student</a>
+                    <a class="list-group-item list-group-item-action " id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Teacher</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Office</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Ground</a>
+                </div>
+            </div>
+            <div class="col-8 col-md-7 col-sm-6">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">A student is primarily a person enrolled in a school or other educational institution who attends classes in a course to attain the appropriate level of mastery of a subject under the guidance of an instructor and who devotes time
+                        outside class to do whatever activities the instructor assigns that are necessary either for class preparation or to submit evidence of progress towards that mastery. In the broader sense, a student is anyone who applies themselves
+                        to the intensive intellectual engagement with some matter necessary to master it as part of some practical affair in which such mastery is basic or decisive.</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">A teacher (also called a school teacher or, in some contexts, an educator) is a person who helps students to acquire knowledge, competence or virtue. Informally the role of teacher may be taken on by anyone (e.g. when showing a colleague
+                        how to perform a specific task). In some countries, teaching young people of school age may be carried out in an informal setting, such as within the family (homeschooling), rather than in a formal setting such as a school or college.
+                        Some other professions may involve a significant amount of teaching (e.g. youth worker, pastor).</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">An office is generally a room or other area where an organization's employees perform administrative work in order to support and realize objects and goals of the organization. The word "office" may also denote a position within an
+                        organization with specific duties attached to it (see officer, office-holder, official); the latter is in fact an earlier usage, office as place originally referring to the location of one's duty. When used as an adjective, the
+                        term "office" may refer to business-related tasks. In law, a company or organization has offices in any place where it has an official presence, even if that presence consists of (for example) a storage silo rather than an establishment
+                        with desk-and-chair.</div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Electrical power distribution systems are often connected to ground to limit the voltage that can appear on distribution circuits. A distribution system insulated from ground may attain a high potential due to transient voltages caused
+                        by arcing, static electricity, or accidental contact with higher potential circuits. A ground connection of the system dissipates such potentials and limits the rise in voltage of the grounded system. In a mains electricity (AC
+                        power) wiring installation, the term ground conductor typically refers to three different conductors or conductor systems.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
